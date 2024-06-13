@@ -28,12 +28,15 @@ body {
 }
 
 .about-me img {
-  height: 400px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-me .image {
   z-index: 2;
   height: 400px;
+  width: 325px;
   grid-area: img;
   box-shadow: var(--shadow-for-boxes)
 }
@@ -65,14 +68,27 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 350px);
+  ;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
 }
 
+.cards .project {
+  box-shadow: 3px 3px 10px 1px #00000047;
+}
+
 .cards .project img {
-  width: 100%;
-  height: 150px;
+  /* max-width: 100%;
+  max-height: 100%; */
+  max-width: 100%;
+  object-fit: cover;
+  height: 375px;
+  display: block;
+}
+
+.cards .content {
+  padding: 11px;
 }
 
 .project-title {
@@ -139,7 +155,7 @@ header::before {
   z-index: -1;
   left: -45%;
   transform: skewY(-17deg);
-  width: 150%;
+  width: 145%;
   height: 150%;
 }
 
