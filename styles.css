@@ -100,22 +100,39 @@ body {
   align-items: center;
   width: 100%;
   height: 10vh;
+  gap: 10px;
 }
 
 .project-title h3 {
   margin-right: auto;
 }
 
+.project-title svg {
+  height: 38px;
+  width: 38px;
+  margin-top: 3px;
+}
+
 svg {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  /* width: 30px; */
+  /* height: 30px;
   background-color: black;
-  margin-left: 10px !important;
+  margin-left: 10px !important; */
+}
+
+svg:hover {
+  cursor: pointer;
 }
 
 .icons {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+i:hover {
+  cursor: pointer;
 }
 
 .contact-info {
@@ -131,7 +148,9 @@ svg {
 }
 
 .contact-info .contact-item * {
-  margin-left: 1vw;
+  margin-left: 0vw;
+  margin-right: 2vw;
+  cursor: default;
 }
 
 .contact-info .contact-item {
@@ -193,6 +212,10 @@ footer {
 }
 
 
-footer svg {
+footer i {
   margin-left: 0 !important;
+}
+
+i {
+  font-size: 35px;
 }
