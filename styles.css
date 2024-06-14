@@ -80,6 +80,10 @@ body {
 
 .cards .project {
   box-shadow: 3px 3px 10px 1px #00000047;
+  transition: transform 1s ease, box-shadow 1s ease;
+  will-change: transform, box-shadow;
+  /* transition-delay: 0, 2s; */
+
 }
 
 .cards .project img {
@@ -93,6 +97,11 @@ body {
 
 .cards .content {
   padding: 15px;
+}
+
+.cards .project:hover {
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.562);
+  transform: scale(1.02);
 }
 
 .project-title {
@@ -141,6 +150,7 @@ i:hover {
   flex-direction: column;
   margin-bottom: 60px;
   margin-top: 30px;
+  margin-right: 50px;
 }
 
 .contact-info * {
@@ -168,11 +178,12 @@ i:hover {
 
 footer img {
   grid-area: img;
-  width: 600px;
-  height: 500px;
-  padding: 50px;
+  width: 500px;
+  height: 450px;
+  /* padding: 50px; */
   margin-right: 100px;
-  margin-top: -10px;
+  margin-top: 10px;
+  border: 2px black solid;
 }
 
 header {
@@ -297,6 +308,7 @@ i {
     padding: 0px;
     margin-right: 0px;
     margin-top: 0px;
+    border: none;
   }
 
   footer h2 {
@@ -380,7 +392,6 @@ i {
 
   footer img {
     width: 400px;
+    margin-top: 25px;
   }
 }
-
-@media (min-width: 1025px) {}
