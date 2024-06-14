@@ -304,6 +304,83 @@ i {
   }
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {}
+@media (min-width: 481px) and (max-width: 1024px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+    ;
+  }
+
+  p {
+    font-size: larger;
+  }
+
+  header::before {
+    height: 100%;
+  }
+
+  .about-me {
+    grid-template-areas: "img content";
+  }
+
+  .about-me .content {
+    display: block;
+    width: 526px;
+    margin-top: 90px;
+    margin-left: -280px;
+  }
+
+  .about-me .content::before {
+    content: "";
+    float: left;
+    margin-top: -102px;
+    margin-left: -100px;
+    margin-right: 15px;
+    height: 380px;
+    width: 304px;
+  }
+
+  .about-me h2 {
+    margin-left: 50%;
+    padding: 24px;
+    margin-top: 17px;
+    font-size: 40px;
+  }
+
+  .about-me .name {
+    max-width: 67%;
+    bottom: 104%;
+    left: 80%;
+    font-size: 44px;
+    white-space: nowrap;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .about-me .image {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+  }
+
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+
+  footer {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  footer img {
+    width: 400px;
+  }
+}
 
 @media (min-width: 1025px) {}
