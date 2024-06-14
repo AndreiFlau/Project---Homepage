@@ -72,7 +72,7 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  grid-template-columns: repeat(3, 1fr);
   ;
   grid-template-rows: 1fr 1fr;
   gap: 30px;
