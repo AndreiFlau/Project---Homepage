@@ -294,6 +294,11 @@ i {
     grid-template-rows: none;
   }
 
+  main h2 {
+    display: flex;
+    justify-content: center;
+  }
+
   footer {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -307,7 +312,7 @@ i {
     height: auto;
     padding: 0px;
     margin-right: 0px;
-    margin-top: 0px;
+    margin-top: 2px;
     border: none;
   }
 
