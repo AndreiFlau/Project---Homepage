@@ -123,6 +123,7 @@ body {
 }
 
 svg {
+  opacity: 60%;
   width: 35px;
   height: 35px;
   /* width: 30px; */
@@ -131,17 +132,21 @@ svg {
   margin-left: 10px !important; */
 }
 
+i {
+  opacity: 60%;
+}
+
+i:hover,
 svg:hover {
   cursor: pointer;
+  /* color: #4A5043 !important;
+  fill: #4A5043; */
+  opacity: 100%;
 }
 
 .icons {
   display: flex;
   justify-content: flex-end;
-}
-
-i:hover {
-  cursor: pointer;
 }
 
 .contact-info {
