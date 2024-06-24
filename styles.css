@@ -128,8 +128,8 @@ svg {
 }
 
 
-i:hover,
-svg:hover {
+i:not(.contact-item i):hover,
+svg:not(.contact-item svg):hover {
   cursor: pointer;
   opacity: 60%;
 }
