@@ -1,6 +1,7 @@
 # Homepage
 
 What if Frodo from Lord Of The Rings had a portfolio? This is what this project tries to answer.
+![website](screenshot.png)
 
 # Credits
 
