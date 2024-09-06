@@ -1,6 +1,7 @@
 # Homepage
 
 What if Frodo from Lord Of The Rings had a portfolio? This is what this project tries to answer.
+
 ![website](screenshot.png)
 
 # Credits
@@ -9,4 +10,4 @@ Map from https://lotro-wiki.com/wiki/Middle-earth. The other pictures are from t
 
 ## Installation
 
-Simply clone the repo and open the html page :)
+Simply clone the repo and open the html page on your browser of choice :)
